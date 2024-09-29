@@ -1,0 +1,8 @@
+@mixin font($weight, $family) {
+  font-family: $family;
+  font-weight: $weight;
+}
+@mixin jumbo($padding, $size) {
+  padding: $padding;
+  font-size: $size;
+}

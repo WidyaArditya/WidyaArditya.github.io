@@ -29,6 +29,94 @@ html {
   margin-bottom: 1rem;
 }
 
+.box {
+  background-color: rgb(67, 63, 253);
+  border-radius: 10px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.box::before {
+  content: "New";
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 4em;
+  font-style: italic;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover::before {
+  opacity: 0.5;
+}
+
+.box::after {
+  content: "Product";
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 4em;
+  font-style: italic;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover::after {
+  opacity: 0.5;
+}
+
+.name {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  top: 0;
+  width: 100%;
+  transform: translate3d(0, 0, 50px);
+  position: absolute;
+}
+
+.box:hover .name {
+  top: 15px;
+  opacity: 1;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover .details {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.product {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 350px;
+  transition: 0.5s;
+}
+
+.box:hover .product {
+  transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.5);
+}
+
 @media (min-width: 992px) {
   .jumbotron {
     padding: 2rem;
