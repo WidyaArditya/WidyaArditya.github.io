@@ -1,7 +1,1 @@
-@import 'html-config';
-@import 'variabel';
-@import 'mixin';
-@import 'hp-breakpoint';
-@import '3d-box';
-@import 'desktop-breakpoint';
-@import 'tablet-breakpoint';
+@import 'module/html-config', 'module/variabel', 'module/mixin', 'module/hp-breakpoint', 'module/3d-box', 'module/desktop-breakpoint', 'module/tablet-breakpoint';
