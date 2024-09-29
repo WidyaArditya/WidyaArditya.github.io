@@ -1,18 +1,19 @@
+@use 'mixin';
 @media (min-width: 768px) {
   .jumbotron {
-    @include jumbo(2rem, 2rem);
+    @include mixin.jumbo(2rem, 2rem);
     img {
       margin-top: 15px;
     }
     span:nth-child(1) {
-      @include font(100, $font-roboto);
+      @include mixin.font(100, mixin.$font-roboto);
     }
     span:nth-child(2) {
-      @include font(bolder, $font-poppins);
+      @include mixin.font(bolder, mixin.$font-poppins);
     }
     span:nth-child(3) {
-      @include font(bold, $font-roboto);
-      color: $color-1;
+      @include mixin.font(bold, mixin.$font-roboto);
+      color: mixin.$color-1;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
   }
