@@ -1,0 +1,46 @@
+html {
+  direction: ltr;
+  font-family: poppins /*rtl:prepend:"Droid Arabic Kufi",*/;
+  color: alicebluess;
+}
+// varibel
+$color-1: rgb(67, 63, 253);
+$color-2: #fff;
+$font-roboto: roboto, sans-serif;
+$font-poppins: poppins, sans-serif;
+// mixin
+@mixin font($weight, $family) {
+  font-family: $family;
+  font-weight: $weight;
+}
+@mixin jumbo($padding, $size) {
+  padding: $padding;
+  font-size: $size;
+}
+
+.jumbotron {
+  @include jumbo(none, 1.7rem);
+  .introduction {
+    margin: 2rem;
+  }
+  span:nth-child(1) {
+    @include font(100, $font-roboto);
+  }
+  span:nth-child(2) {
+    @include font(bolder, $font-poppins);
+  }
+  span:nth-child(3) {
+    @include font(bold, $font-roboto);
+    color: $color-1;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  button {
+    margin-bottom: 1rem;
+  }
+}
+
+// breckpoint
+
+// desktop
+@media (min-width: 992px) {
+}

@@ -1,1 +1,30 @@
-/*# sourceMappingURL=main.css.map */
+html {
+  direction: ltr;
+  font-family: poppins;
+  color: alicebluess;
+}
+
+.jumbotron {
+  padding: none;
+  font-size: 1.7rem;
+}
+.jumbotron .introduction {
+  margin: 2rem;
+}
+.jumbotron span:nth-child(1) {
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+}
+.jumbotron span:nth-child(2) {
+  font-family: poppins, sans-serif;
+  font-weight: bolder;
+}
+.jumbotron span:nth-child(3) {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  color: rgb(67, 63, 253);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.jumbotron button {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=main.css.map */
