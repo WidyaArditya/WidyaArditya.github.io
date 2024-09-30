@@ -1,0 +1,21 @@
+@use 'mixin';
+.jumbotron {
+  @include mixin.jumbo(none, 1.7rem);
+  .introduction {
+    margin: 2rem;
+  }
+  span:nth-child(1) {
+    @include mixin.font(100, mixin.$font-roboto);
+  }
+  span:nth-child(2) {
+    @include mixin.font(bolder, mixin.$font-poppins);
+  }
+  span:nth-child(3) {
+    @include mixin.font(bold, mixin.$font-roboto);
+    color: mixin.$color-1;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  button {
+    margin-bottom: 1rem;
+  }
+}
