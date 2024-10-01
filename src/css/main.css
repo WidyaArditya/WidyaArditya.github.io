@@ -1,3 +1,8 @@
+html {
+  direction: ltr;
+  font-family: poppins;
+}
+
 .box {
   background-color: rgb(67, 63, 253);
   border-radius: 10px;
