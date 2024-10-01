@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "bootstrap": "^5.3.3",
     "css-loader": "^7.1.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.95.0",
