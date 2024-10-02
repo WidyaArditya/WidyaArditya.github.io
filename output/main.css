@@ -12149,7 +12149,7 @@ html {
 }
 
 .box:hover .product {
-  transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.5);
+  transform: translate3d(-50%, -58%, 80px) rotate(-7deg) scale(1.25);
 }
 
 .jumbotron {

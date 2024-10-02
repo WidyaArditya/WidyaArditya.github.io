@@ -1,2 +1,2 @@
 import css from './css/main.css';
-require('./vendor');
+import VanillaTilt from './vendor';
