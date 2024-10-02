@@ -13,14 +13,16 @@
   "devDependencies": {
     "bootstrap": "^5.3.3",
     "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
     "style-loader": "^4.0.0",
+    "vanilla-tilt": "^1.8.1",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "exports-loader": "^5.0.0",
-    "vanilla-tilt": "^1.8.1"
+    "exports-loader": "^5.0.0"
   }
 }
