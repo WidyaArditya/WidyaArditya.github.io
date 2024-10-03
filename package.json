@@ -25,6 +25,7 @@
   "dependencies": {
     "@fontsource/poppins": "^5.1.0",
     "@fontsource/roboto": "^5.1.0",
-    "exports-loader": "^5.0.0"
+    "exports-loader": "^5.0.0",
+    "gsap": "^3.12.5"
   }
 }
